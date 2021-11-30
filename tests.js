@@ -28,5 +28,15 @@ describe('sayHello', function () {
     it('should return "Hello, Pat" when "Pat" is passed in', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat");
     });
+    it('should return "Hello, World" when no input is passed in', function(){
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World" when true is passed in', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World" when false is passed in', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    // I could keep going and test for edge cases: input is null, input is '', input is number, etc.
 });
 

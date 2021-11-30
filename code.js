@@ -4,7 +4,7 @@ const helloWorld = function () {
 }
 
 // sayHello function
-// ORIGINAL
+// ORIGINAL - written after tests were made
 // function sayHello(input) {
 //     if (input === 'Alex') {
 //         return 'Hello, ' + input;
@@ -16,5 +16,9 @@ const helloWorld = function () {
 // }
 
 // REFACTORED
-let sayHello = input => `Hello, ${input}`;
-
+function sayHello(input) {
+    if (typeof input === "undefined" || input === true || input === false) {
+        return "Hello, World!";
+    }
+    return `Hello, ${input}`;
+}
