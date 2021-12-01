@@ -17,7 +17,7 @@ describe('helloWorld', function() {
 // Unit tests for sayHello function
 describe('sayHello', function () {
     it('should be defined a function', function () {
-        expect(typeof sayHello()).toBe('string');
+        expect(typeof sayHello).toBe('function');
     });
     it('should return the string "Hello, Jane" when executed', function() {
         expect(sayHello("Jane")).toBe("Hello, Jane");
@@ -41,3 +41,21 @@ describe('sayHello', function () {
 });
 
 // Unit tests for isFive function
+describe('isFive', function (){
+    it('the function should exist', function (){
+        expect(isFive).toBeDefined();
+    })
+    it('should be a defined a function', function (){
+        expect(typeof isFive).toBe('function');
+    });
+    it('should always return a boolean', function (){
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when passed 5', function (){
+        expect(isFive(5)).toBe(true);
+    });
+    // it('input must be a number', function (){
+    //     // I want to test that the user passes in a value of type number
+    //     expect(isFive('5')).toBeNaN();
+    // });
+});

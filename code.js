@@ -22,3 +22,8 @@ function sayHello(input) {
     }
     return `Hello, ${input}`;
 }
+
+// isFive function
+function isFive(num) {
+    return !(typeof num !== 'number' || num !== 5);
+}
