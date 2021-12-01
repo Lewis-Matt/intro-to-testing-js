@@ -40,3 +40,4 @@ describe('sayHello', function () {
     // I could keep going and test for edge cases: input is null, input is '', input is number, etc.
 });
 
+// Unit tests for isFive function
